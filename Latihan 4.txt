@@ -1,0 +1,17 @@
+def faktorial(n):
+    if n < 0:
+        return "Error: Bilangan harus merupakan bilangan bulat positif."
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        fakt = 1
+        for i in range(2, n + 1):
+            fakt *= i
+        return fakt
+
+# Meminta input dari pengguna
+bilangan = int(input("Masukkan bilangan bulat positif: "))
+
+# Memanggil fungsi faktorial dan mencetak hasilnya
+hasil = faktorial(bilangan)
+print("Faktorial dari", bilangan, "adalah", hasil)

@@ -1,0 +1,8 @@
+# definisi fungsi print_string 
+def print_string(string_to_print): 
+    """Menampilkan argumen string string_to_print ke layar""" 
+    print(string_to_print)
+
+# Kita memanggil fungsi dengan argumen "Hello Python"
+
+print_string("Hello Python")
